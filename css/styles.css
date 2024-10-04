@@ -116,3 +116,18 @@ body {
     background: url(../images/grass.jpg) center / cover no-repeat;
 }
 
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-left: 1rem;
+    justify-content: center;
+}
+.sidebar img {
+    width: 5rem;
+    background: #00000025;
+    cursor: pointer;
+}
+.surface {
+    display: none;
+}
