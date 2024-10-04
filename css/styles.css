@@ -75,7 +75,7 @@ body {
 .btns.row {
     flex-direction: row;
     justify-content: flex-start;
-    margin: 1rem;
+    padding: 1rem;
 }
 .btns.row a {
     width: 7.5rem;
@@ -94,18 +94,25 @@ body {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(25, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     position: absolute;
     bottom: 0;
     left: 0;
-    padding: 0;
-    gap: 0;
 }
 .cell {
     height: 100px;
-    background: url(../images/dirt.webp) center / cover no-repeat;
     cursor: pointer;
 }
 .cell:hover {
     border: 1px solid black;
 }
+.dirtCell {
+    background: url(../images/dirt.jpg) center / cover no-repeat;
+}
+.rockCell {
+    background: url(../images/rock.jpg) center / cover no-repeat;
+}
+.grassCell {
+    background: url(../images/grass.jpg) center / cover no-repeat;
+}
+
