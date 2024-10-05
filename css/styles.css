@@ -132,9 +132,14 @@ body {
     user-select: none;
     z-index: 1;
 }
-/* .surface {
-    display: none;
-} */
 .picked {
     opacity: 0.5;
 }
+#grass, #dirt, #rock {
+    display: none;
+}
+ .surface span {
+    float: right;
+    position: relative;
+    top: 4px;
+ }
