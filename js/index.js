@@ -1,3 +1,23 @@
+// Sidebar feature
+// const sideBar = document.querySelector(".sidebar");
+const tools = document.getElementsByClassName("tool");
+const surface = document.getElementsByClassName("surface");
+
+const selectableTools = Array.from(tools);
+selectableTools.forEach((tool) => {
+  tool.addEventListener("click", () => {
+    if (tool.classList.contains("picked")) {
+      tool.classList.remove("picked");
+    } else {
+      selectableTools.forEach((tool) => {
+        tool.classList.remove("picked");
+      });
+      tool.classList.add("picked");
+    }
+  });
+});
+
+// Grid feature
 const gridContainer = document.querySelector(".grid");
 const grassRows = 1;
 const rocksRows = 2;

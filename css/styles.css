@@ -98,6 +98,7 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
+    z-index: 0;
 }
 .cell {
     height: 100px;
@@ -122,12 +123,18 @@ body {
     gap: 0.5rem;
     padding-left: 1rem;
     justify-content: center;
+    width: fit-content;
 }
 .sidebar img {
-    width: 5rem;
+    width: 4rem;
     background: #00000025;
     cursor: pointer;
+    user-select: none;
+    z-index: 1;
 }
-.surface {
+/* .surface {
     display: none;
+} */
+.picked {
+    opacity: 0.5;
 }
