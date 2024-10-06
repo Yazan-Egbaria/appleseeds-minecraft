@@ -76,6 +76,8 @@ body {
     flex-direction: row;
     justify-content: flex-start;
     padding: 1rem;
+    position: relative;
+    z-index: 1;
 }
 .btns.row a {
     width: 7.5rem;
@@ -124,13 +126,14 @@ body {
     padding-left: 1rem;
     justify-content: center;
     width: fit-content;
+    position: relative;
+    z-index: 1;
 }
 .sidebar img {
     width: 4rem;
     background: #00000025;
     cursor: pointer;
     user-select: none;
-    z-index: 1;
 }
 .picked {
     opacity: 0.5;

@@ -30,3 +30,7 @@ At first, I will do the UI, the main menu page (which is the first page), and th
 * Clicking on a tile in the inventory and then clicking somewhere in the world should place down tile elements
 
 * Reset button, it will reset the world to how it started
+
+## Fails
+
+I've tried multiple times to insert a better grid for the screen to implement trees and removed tiles, but everytime I tried it was a mess, that's why I couldnt do it after all!
