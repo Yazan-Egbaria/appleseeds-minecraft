@@ -4,18 +4,19 @@ body {
     font-family: 'Minecraft', sans-serif;
     width: 100%;
     height: 100dvh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                url(../images/wallpaper.png) center / cover no-repeat;
+    /* overflow: hidden; */
 }
 
 .container {
     width: 100%;
-    height: 100dvh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/wallpaper.png) center / cover no-repeat;
 }
 
 .logo {
@@ -58,3 +59,90 @@ body {
     text-shadow: none;
     transition: all 0.3s ease;
 }
+
+/* World */
+
+#wallpaper {
+    width: 100%;
+    height: 100%;
+    background: #87CEEB;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.btns.row {
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 1rem;
+    position: relative;
+    z-index: 1;
+}
+.btns.row a {
+    width: 7.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    padding: 0 1.25rem;
+    font-size: 1.25rem;
+}
+#reset:hover {
+    color: red;
+    outline-color: red;
+    border-color: #c44040 #a10b0b #a10b0b #c44040;
+}
+
+.grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(25, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}
+.cell {
+    height: 100px;
+    cursor: pointer;
+}
+.cell:hover {
+    border: 1px solid black;
+}
+.dirtCell {
+    background: url(../images/dirt.jpg) center / cover no-repeat;
+}
+.rockCell {
+    background: url(../images/rock.jpg) center / cover no-repeat;
+}
+.grassCell {
+    background: url(../images/grass.jpg) center / cover no-repeat;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-left: 1rem;
+    justify-content: center;
+    width: fit-content;
+    position: relative;
+    z-index: 1;
+}
+.sidebar img {
+    width: 4rem;
+    background: #00000025;
+    cursor: pointer;
+    user-select: none;
+}
+.picked {
+    opacity: 0.5;
+}
+#grass, #dirt, #rock {
+    display: none;
+}
+ .surface span {
+    float: right;
+    position: relative;
+    top: 4px;
+ }
